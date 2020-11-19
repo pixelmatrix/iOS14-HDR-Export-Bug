@@ -13,6 +13,8 @@
 		0396F02F2565B4CD00C03C72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0396F02D2565B4CD00C03C72 /* Main.storyboard */; };
 		0396F0312565B4CE00C03C72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0396F0302565B4CE00C03C72 /* Assets.xcassets */; };
 		0396F0342565B4CE00C03C72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0396F0322565B4CE00C03C72 /* LaunchScreen.storyboard */; };
+		039B059E256726AA00FD7780 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039B059D256726AA00FD7780 /* SettingsViewController.swift */; };
+		039B05A1256726B700FD7780 /* Exporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039B05A0256726B700FD7780 /* Exporter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		0396F0302565B4CE00C03C72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0396F0332565B4CE00C03C72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0396F0352565B4CE00C03C72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		039B059D256726AA00FD7780 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		039B05A0256726B700FD7780 /* Exporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exporter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				0396F0272565B4CD00C03C72 /* AppDelegate.swift */,
 				0396F0292565B4CD00C03C72 /* SceneDelegate.swift */,
 				0396F02B2565B4CD00C03C72 /* ViewController.swift */,
+				039B059D256726AA00FD7780 /* SettingsViewController.swift */,
+				039B05A0256726B700FD7780 /* Exporter.swift */,
 				0396F02D2565B4CD00C03C72 /* Main.storyboard */,
 				0396F0302565B4CE00C03C72 /* Assets.xcassets */,
 				0396F0322565B4CE00C03C72 /* LaunchScreen.storyboard */,
@@ -139,7 +145,9 @@
 			files = (
 				0396F02C2565B4CD00C03C72 /* ViewController.swift in Sources */,
 				0396F0282565B4CD00C03C72 /* AppDelegate.swift in Sources */,
+				039B05A1256726B700FD7780 /* Exporter.swift in Sources */,
 				0396F02A2565B4CD00C03C72 /* SceneDelegate.swift in Sources */,
+				039B059E256726AA00FD7780 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
