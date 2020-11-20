@@ -96,7 +96,7 @@ class Exporter {
             completion()
             return
         }
-        print("Exporting asset")
+        print("Exporting asset to \(url.relativePath)")
         let options = PHVideoRequestOptions()
         options.deliveryMode = deliveryMode
         options.isNetworkAccessAllowed = isNetworkAccessAllowed
@@ -118,17 +118,20 @@ class Exporter {
         exportSession.outputFileType = outputFileType
         exportSession.shouldOptimizeForNetworkUse = shouldOptimizeForNetworkUse
         exportSession.exportAsynchronously {
-            self.didCompleteExport(to: outputURL, with: exportSession.status, completion: completion)
+            self.didCompleteExport(to: outputURL, with: exportSession.status, error: exportSession.error, completion: completion)
         }
     }
     
-    private func didCompleteExport(to outputURL: URL, with status: AVAssetExportSession.Status, completion: @escaping () -> Void) {
+    private func didCompleteExport(to outputURL: URL, with status: AVAssetExportSession.Status, error: Error?, completion: @escaping () -> Void) {
         DispatchQueue.main.async {
             switch status {
             case .completed:
                 print("File exported to \(outputURL)")
             case .failed:
                 print("Failed to export")
+                if let error = error {
+                    print("Error: \(error)")
+                }
             case .cancelled:
                 print("Export cancelled")
             default:
