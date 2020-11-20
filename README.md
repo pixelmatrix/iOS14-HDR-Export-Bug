@@ -2,6 +2,8 @@
 
 Demonstrates an issue exporting HDR videos from the photos library with various presets. It appears that HDR videos shot on iPhone 12 Pro and exported via `PHImageManager.requestAVAssetExportSession()` with certain lower quality presets will result in a video that does not play properly. The audio seems to play fine, but the video is a solid color.
 
+![image](image.png)
+
 **Failing Presets**
 - AVAssetExportPresetLowQuality
 - AVAssetExportPresetMediumQuality
