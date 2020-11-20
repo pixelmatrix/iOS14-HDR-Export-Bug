@@ -7,7 +7,6 @@ Demonstrates an issue exporting HDR videos from the photos library with various 
 **Failing Presets**
 - AVAssetExportPresetLowQuality
 - AVAssetExportPresetMediumQuality
-- AVAssetExportPreset
 - AVAssetExportPreset960x540
 
 ## Using this sample code
